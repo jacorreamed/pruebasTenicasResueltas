@@ -1,0 +1,8 @@
+{
+  "name": "ejercicios",
+  "version": "1.0.0",
+  "description": "this is a project to put all axcercises related to programming logic",
+  "main": "index.js",
+  "author": "jacorreamed",
+  "license": "MIT"
+}
