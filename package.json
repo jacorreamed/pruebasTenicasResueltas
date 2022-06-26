@@ -4,5 +4,11 @@
   "description": "this is a project to put all axcercises related to programming logic",
   "main": "index.js",
   "author": "jacorreamed",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^28.1.1"
+  }
 }
