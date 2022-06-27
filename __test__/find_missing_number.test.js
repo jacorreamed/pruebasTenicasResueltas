@@ -21,6 +21,6 @@ describe(`Given an array of integers and a value,
       expect(existSum([5,7,1,2,8,4,3],10)).toBe(true)
     })
     test(`when array equals to [5,7,1,2,8,4,3] an value equal to 19`,()=>{
-      expect(existSum([5,7,1,2,8,4,3],10)).toBe(false)
+      expect(existSum([5,7,1,2,8,4,3],19)).toBe(false)
     })
   })
