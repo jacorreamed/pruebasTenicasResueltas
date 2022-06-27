@@ -8,6 +8,6 @@ describe(`Given an array of positive numbers from 1 to n,
     expect(findMissingNumber([1, 3, 4, 2, 6])).toBe(5);
   });
   test('when array equals to [3,4,2,6,5,7,8,9] result must be 1', () => {
-    expect(findMissingNumber([3,4,2,6,5,7,8,9])).toBe(1);
+    expect(findMissingNumber([3, 4, 2, 6, 5, 7, 8, 9])).toBe(1);
   });
 });
