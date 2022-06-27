@@ -1,5 +1,5 @@
 function findMissingNumber(arr) {
-  //Big O notation (time): O(n)
+  // Big O notation (time): O(n)
   // calculate the sum of the number in the array
   const sum = arr.reduce((prev, current) => prev + current, 0);
   // calculate the real value
@@ -7,24 +7,21 @@ function findMissingNumber(arr) {
   return correctSum - sum;
 }
 
-function existSum(arr,value) {
-  var cond = false
-  
-  for (let i = 0; i < arr.length; i++) {
+function existSum(arr, value) {
+  // Big O : O(n)
+  let store = [];
 
-    for (let j = 0; j < arr.length; j++) {
-      if(i==j)
-      continue
-      if((arr[i]+arr[j])==value){
-        cond = true
-        break
-      }
-    }
+  for (let i = 0; i < arr.length; i++) {
+    let baz = value-arr[i];
+    if(store.findIndex(e => e == baz) != -1)
+    return true;
+    store.push(arr[i]);
   }
-  return cond
+
+  return false
 }
 
 module.exports = {
   findMissingNumber,
-  existSum
+  existSum,
 };
