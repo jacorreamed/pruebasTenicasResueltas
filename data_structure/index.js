@@ -6,6 +6,13 @@ function findMissingNumber(arr) {
   return correctSum - sum;
 }
 
+function existSum(arr,value) {
+  var cond = false
+
+  return cond
+}
+
 module.exports = {
   findMissingNumber,
+  existSum
 };
