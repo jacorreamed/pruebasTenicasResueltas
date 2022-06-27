@@ -1,7 +1,11 @@
-function find_missing_number(arr){
-  return true
+function findMissingNumber(arr) {
+  // calculate the sum of the number in the array
+  const sum = arr.reduce((prev, current) => prev + current, 0);
+  // calculate the real value
+  const correct_sum = (arr.length + 1) * ((1 + (arr.length + 1)) / 2);
+  return correct_sum - sum;
 }
 
 module.exports = {
-  find_missing_number
-}
+  findMissingNumber,
+};
