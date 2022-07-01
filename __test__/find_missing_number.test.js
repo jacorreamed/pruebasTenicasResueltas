@@ -1,4 +1,4 @@
-const { findMissingNumber, existSum } = require('../data_structure');
+const { findMissingNumber, existSum, existSumDigits } = require('../data_structure');
 
 describe(`Given an array of positive numbers from 1 to n,
   such that all numbers from 1 to n are present except one number x.
@@ -23,3 +23,15 @@ describe(`Given an array of integers and a value,
     expect(existSum([5, 7, 1, 2, 8, 4, 3], 19)).toBe(false);
   });
 });
+
+describe(`Given an array of integers nums and an integer target,
+  return indices of the two numbers such that they add up to target.
+  You may assume that each input would have exactly one solution,
+  and you may not use the same element twice. You can return the answer in any order.`,()=>{
+    test(`When nums = [3,2,4] and target = 6`,()=>{
+      expect(existSumDigits([3,2,4],2)).toBe([1,2]);
+    });
+    test(`When nums = [3,3] and target = 6`,()=>{
+      expect(existSumDigits([3,3],2)).toBe([0,1]);
+    });
+  });
