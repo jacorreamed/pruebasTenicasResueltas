@@ -21,7 +21,33 @@ function existSum(arr, value) {
   return false
 }
 
+
+function existSumDigits(arr,target){
+  var queue = new Map();
+  var found = false;
+  var result = [];
+  for(let i=0; i<arr.length;i++){
+    if(i==0){
+      queue.set(arr[i],i); //guardamos el valor del array como clave de la queue
+      continue;
+    }
+
+    if(queue.has((target - arr[i]))){
+      result.push(queue.get((target - arr[i])));
+      result.push(i);
+      break;
+    }else{
+      if(!queue.has(arr[i]))
+        queue.set(arr[i],i);
+    }
+  }
+  return result;
+}
+
+console.log(existSumDigits([3,3],6));
+
 module.exports = {
   findMissingNumber,
   existSum,
+  existSumDigits
 };

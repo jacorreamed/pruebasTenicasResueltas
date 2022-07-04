@@ -29,9 +29,9 @@ describe(`Given an array of integers nums and an integer target,
   You may assume that each input would have exactly one solution,
   and you may not use the same element twice. You can return the answer in any order.`,()=>{
     test(`When nums = [3,2,4] and target = 6`,()=>{
-      expect(existSumDigits([3,2,4],2)).toBe([1,2]);
+      expect(existSumDigits([3,2,4],6)).toEqual([1,2]);
     });
     test(`When nums = [3,3] and target = 6`,()=>{
-      expect(existSumDigits([3,3],2)).toBe([0,1]);
+      expect(existSumDigits([3,3],6)).toEqual([0,1]);
     });
   });
