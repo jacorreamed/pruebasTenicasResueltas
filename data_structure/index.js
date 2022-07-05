@@ -44,10 +44,13 @@ function existSumDigits(arr,target){
   return result;
 }
 
-console.log(existSumDigits([3,3],6));
+function permutations(str){
+
+}
 
 module.exports = {
   findMissingNumber,
   existSum,
-  existSumDigits
+  existSumDigits,
+  permutations
 };

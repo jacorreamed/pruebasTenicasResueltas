@@ -1,4 +1,4 @@
-const { findMissingNumber, existSum, existSumDigits } = require('../data_structure');
+const { findMissingNumber, existSum, existSumDigits,permutations } = require('../data_structure');
 
 describe(`Given an array of positive numbers from 1 to n,
   such that all numbers from 1 to n are present except one number x.
@@ -34,4 +34,13 @@ describe(`Given an array of integers nums and an integer target,
     test(`When nums = [3,3] and target = 6`,()=>{
       expect(existSumDigits([3,3],6)).toEqual([0,1]);
     });
-  });
+});
+
+
+describe(`Given a string, write a function that receives a string as input and+
+  computes all possible permitations`,()=>{
+    test(`When string is 'abc' result must be ['abc','acb','bac','bca','cba','cab']`,()=>{
+      expect(permutations('abc')).toEqual(['abc','acb','bac','bca','cba','cab']);
+    })
+  }
+)
