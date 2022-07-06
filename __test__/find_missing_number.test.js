@@ -39,8 +39,15 @@ describe(`Given an array of integers nums and an integer target,
 
 describe(`Given a string, write a function that receives a string as input and+
   computes all possible permitations`,()=>{
-    test(`When string is 'abc' result must be ['abc','acb','bac','bca','cba','cab']`,()=>{
-      expect(permutations('abc')).toEqual(['abc','acb','bac','bca','cba','cab']);
+    test(`When string is 'abc' result must be ['abc','bac','cab','acb','bca','cba']`,()=>{
+      expect(permutations('abc')).toEqual(['abc','bac','cab','acb','bca','cba']);
     })
   }
 )
+
+describe(`You are given two non-empty linked lists representing two non-negative integers.
+  The digits are stored in reverse order, and each of their nodes contains a single digit.
+  Add the two numbers and return the sum as a linked list. You may assume the two numbers
+  do not contain any leading zero, except the number 0 itself.`,()=>{
+    test('When l1 = [2,4,3], l2 = [5,6,4] the output must be Output: [7,0,8]',()=)
+  });
