@@ -50,6 +50,6 @@ describe(`You are given two non-empty linked lists representing two non-negative
   Add the two numbers and return the sum as a linked list. You may assume the two numbers
   do not contain any leading zero, except the number 0 itself.`,()=>{
     test('When l1 = [2,4,3], l2 = [5,6,4] the output must be Output: [7,0,8]',()=>{
-      expect(ds.addTwoNumbers).toEqual([7,0,8]);
+      expect(ds.addTwoNumbers([2,4,3],[5,6,4])).toEqual([7,0,8]);
     })
   });
