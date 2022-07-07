@@ -84,8 +84,40 @@ function permutations(str){
 };
 
 var addTwoNumbers = function(l1, l2) {
-    return false;
+    const Node = function(value, next = null){
+      this.value = value;
+      this.next = next;
+    }
+
+    const linkedList = function(){
+
+      this.head = null;
+
+      this.addNode = function(value){
+        let node = new Node(value)
+
+        if (this.head == null){
+          this.head = node;
+        }else{
+          node.next = this.head;
+          this.head = node;
+        }
+
+
+
+      }
+    }
+
+    const list_1 = new linkedList();
+    list_1.addNode(12);
+    list_1.addNode(13);
+    list_1.addNode(14);
+    list_1.addNode(15);
+
+    console.log(list_1);
 };
+
+addTwoNumbers([2,4,3],[5,6,4]);
 
 module.exports = {
   findMissingNumber,
