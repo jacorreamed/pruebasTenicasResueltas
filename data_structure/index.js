@@ -92,6 +92,7 @@ var addTwoNumbers = function(l1, l2) {
     const linkedList = function(){
 
       this.head = null;
+      this.total = 0;
 
       this.addNode = function(value){
         let node = new Node(value)
@@ -102,8 +103,7 @@ var addTwoNumbers = function(l1, l2) {
           node.next = this.head;
           this.head = node;
         }
-
-
+        this.total++;
 
       }
     }
@@ -113,8 +113,10 @@ var addTwoNumbers = function(l1, l2) {
     list_1.addNode(13);
     list_1.addNode(14);
     list_1.addNode(15);
+    list_1.addNode(16);
+    list_1.addNode(17);
 
-    console.log(list_1);
+    console.log(list_1.head);
 };
 
 addTwoNumbers([2,4,3],[5,6,4]);
