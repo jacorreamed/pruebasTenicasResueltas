@@ -106,15 +106,14 @@ var addTwoNumbers = function(l1, l2) {
         this.total++;
 
       }
+
+      this.arrayToLinkedList = function(arr){
+        arr.forEach(element => this.addNode(element));
+      }
     }
 
     const list_1 = new linkedList();
-    list_1.addNode(12);
-    list_1.addNode(13);
-    list_1.addNode(14);
-    list_1.addNode(15);
-    list_1.addNode(16);
-    list_1.addNode(17);
+    list_1.arrayToLinkedList(l1);
 
     console.log(list_1.head);
 };
